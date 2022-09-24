@@ -1,0 +1,33 @@
+DESAFIO
+
+Crie um programa que calcule os juros e o montante de um empréstimo, nas seguintes condições:
+-Se capital > 10000, juros de 5.5% ao mês;
+-Caso contrário, juros de 3.7% ao mês.
+
+RESOLUÇÃO
+
+valor = input ("Escreva o valor do empréstimo solicitado: R$: ")
+tempo = input ("Em quantos meses pretende pagar: ")
+capital = float(valor) #conversão para número
+prazo = float(tempo)   #conversão para número
+if capital > 10000:
+    taxa=0.055         #respeitar indentação
+else:
+    taxa=0.037         #respeitar indentação
+juros=capital*taxa*prazo
+montante=capital+juros    
+print ("O montante a ser pago será de R$ ", montante, "e os juros serão de R$ ", juros)
+
+TESTES
+
+Escreva o valor do empréstimo solicitado: R$: 5000
+Em quantos meses pretende pagar: 5
+O montante a ser pago será de R$  5925.0 e os juros serão de R$  925.0
+
+Escreva o valor do empréstimo solicitado: R$: 12000
+Em quantos meses pretende pagar: 5
+O montante a ser pago será de R$  15300.0 e os juros serão de R$  3300.0
+
+Fonte: https://www.udemy.com/share/105jUc3@MHnymZeTUFGYPjgszK8VZ1pJSQW1W77nq8a9dxsLZ-k9XNAZXbt-WIZb1I71pjhXTg==/
+Python online: https://www.programiz.com/python-programming/online-compiler/
+
