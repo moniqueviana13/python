@@ -1,0 +1,27 @@
+ATIVIDADE
+
+Criação de um dicionário em python:
+-Mostrar chaves e valores separadamente;
+-Remoção de último item e remoção de acordo com chave.
+
+RESOLUÇÃO
+
+dicionario={'dia1':'segunda','dia2':'terca','dia3':'quarta','dia4':'quinta','dia5':'sexta','dia6':'sábado','dia7':'domingo'}
+print (dicionario)
+print(dicionario.keys()) #mostra chaves
+print (dicionario.values()) #mostra valores
+print (dicionario.popitem()) #pop remove o último
+print (dicionario)
+print (dicionario.popitem())
+print (dicionario)
+del (dicionario ['dia1']) #deletar a chave desejada
+print (dicionario)
+
+{'dia1': 'segunda', 'dia2': 'terca', 'dia3': 'quarta', 'dia4': 'quinta', 'dia5': 'sexta', 'dia6': 'sábado', 'dia7': 'domingo'}
+dict_keys(['dia1', 'dia2', 'dia3', 'dia4', 'dia5', 'dia6', 'dia7'])
+dict_values(['segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo'])
+('dia7', 'domingo')
+{'dia1': 'segunda', 'dia2': 'terca', 'dia3': 'quarta', 'dia4': 'quinta', 'dia5': 'sexta', 'dia6': 'sábado'}
+('dia6', 'sábado')
+{'dia1': 'segunda', 'dia2': 'terca', 'dia3': 'quarta', 'dia4': 'quinta', 'dia5': 'sexta'}
+{'dia2': 'terca', 'dia3': 'quarta', 'dia4': 'quinta', 'dia5': 'sexta'}
